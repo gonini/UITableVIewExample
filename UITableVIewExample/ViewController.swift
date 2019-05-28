@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     fileprivate let tableView: UITableView = {
         let view = UITableView()
+        view.register(SingleContentCell.self, forCellReuseIdentifier: SingleContentCell.id)
         return view
     }()
     
@@ -22,8 +23,8 @@ class ViewController: UIViewController {
     }
     
     private func addView() {
-        
         view.addSubview(tableView)
+        
         tableView.snp.makeConstraints{ make in
             make.leading.trailing.top.bottom
                 .equalTo(view.safeAreaLayoutGuide)
