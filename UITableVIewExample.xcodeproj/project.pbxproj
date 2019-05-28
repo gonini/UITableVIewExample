@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8CEC7B1FFA627DDAFD66FFAC /* Pods_UITableVIewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF9F8035EDAC26C95BF9A72 /* Pods_UITableVIewExample.framework */; };
 		9920D28C229D20D70077C95C /* SingleContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920D28B229D20D70077C95C /* SingleContentCell.swift */; };
+		9920D28E229D2B730077C95C /* DummyImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920D28D229D2B730077C95C /* DummyImageService.swift */; };
 		99EB4A73229C0FD900B2BD93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EB4A72229C0FD900B2BD93 /* AppDelegate.swift */; };
 		99EB4A75229C0FD900B2BD93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EB4A74229C0FD900B2BD93 /* ViewController.swift */; };
 		99EB4A78229C0FD900B2BD93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EB4A76229C0FD900B2BD93 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		467ADB0E55F0DAE27B564622 /* Pods-UITableVIewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITableVIewExample.debug.xcconfig"; path = "Target Support Files/Pods-UITableVIewExample/Pods-UITableVIewExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5AF9F8035EDAC26C95BF9A72 /* Pods_UITableVIewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITableVIewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9920D28B229D20D70077C95C /* SingleContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleContentCell.swift; sourceTree = "<group>"; };
+		9920D28D229D2B730077C95C /* DummyImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyImageService.swift; sourceTree = "<group>"; };
 		99EB4A6F229C0FD900B2BD93 /* UITableVIewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableVIewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EB4A72229C0FD900B2BD93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99EB4A74229C0FD900B2BD93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				99EB4A7B229C0FDC00B2BD93 /* LaunchScreen.storyboard */,
 				99EB4A7E229C0FDC00B2BD93 /* Info.plist */,
 				9920D28B229D20D70077C95C /* SingleContentCell.swift */,
+				9920D28D229D2B730077C95C /* DummyImageService.swift */,
 			);
 			path = UITableVIewExample;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9920D28C229D20D70077C95C /* SingleContentCell.swift in Sources */,
+				9920D28E229D2B730077C95C /* DummyImageService.swift in Sources */,
 				99EB4A75229C0FD900B2BD93 /* ViewController.swift in Sources */,
 				99EB4A73229C0FD900B2BD93 /* AppDelegate.swift in Sources */,
 			);

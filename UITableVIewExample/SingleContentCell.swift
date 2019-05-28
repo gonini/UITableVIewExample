@@ -34,9 +34,13 @@ class SingleContentCell: UITableViewCell {
         }
     }
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         addView()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     private func addView() {
@@ -44,7 +48,7 @@ class SingleContentCell: UITableViewCell {
         addSubview(titleLabel)
         
         singleImageView.snp.makeConstraints { make in
-            make.leading.top.bottom
+            make.left.top.bottom
                 .equalTo(self)
                 .labeled("\(singleImageView) leading top bottom equalTo self")
             
@@ -55,13 +59,17 @@ class SingleContentCell: UITableViewCell {
         
         titleLabel.snp.makeConstraints { make in
             titleLabel.textAlignment = .center
+
+            make.size
+                .equalTo(titleLabel)
+                .labeled("\(titleLabel) size equalTo titleLabel")
             
-            make.top.trailing.bottom
+            make.top.right.bottom
                 .equalTo(self)
                 .labeled("\(titleLabel) top trailing bottom equalTo self")
-            
-            make.leading
-                .equalTo(singleImageView.snp.trailing)
+
+            make.left
+                .equalTo(singleImageView.snp.right)
                 .labeled("\(titleLabel) leading equalTo singleImageView.snp.trailing")
         }
     }
