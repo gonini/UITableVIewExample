@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
-
+    
+    fileprivate let tableView: UITableView = {
+        let view = UITableView()
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-
+    
+    private func addView() {
+        
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints{ make in
+            make.leading.trailing.top.bottom
+                .equalTo(view.safeAreaLayoutGuide)
+            
+        }
+    }
 }
 
